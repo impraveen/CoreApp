@@ -9,12 +9,12 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="tile_page")
-public class TilePage {
+@Table(name="WEB_PAGE")
+public class WebPage {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SEQUENCE1")
-	@SequenceGenerator(name="SEQUENCE1", sequenceName="TILE_PAGE_SEQ", allocationSize=1)
+	@SequenceGenerator(name="SEQUENCE1", sequenceName="WEB_PAGE_SEQ", allocationSize=1)
 	@Column(name="page_id")
 	private Integer pageId;
 	
